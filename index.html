@@ -23,14 +23,14 @@
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
  
-        /*var request = new XMLHttpRequest();
-        request.open("GET","INVOKE_URL", true);
+        var request = new XMLHttpRequest();
+        request.open("GET","https://nf5v682l5h.execute-api.ap-south-1.amazonaws.com/main", true);
         request.setRequestHeader("Authorization", id_token);
         request.onload = function() {
           var text = request.responseText;
           document.getElementById("content").innerHTML = text;
         };
-        request.send(); */
+        request.send(); 
       }                                                                        
     </script>
   </body>
